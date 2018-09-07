@@ -26,7 +26,7 @@ parts:
       - libasound2
       - pulseaudio
 
-      after:
+    after:
       - desktop-gtk3
 
 build: node_modules/.bin/electron-builder
