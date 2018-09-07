@@ -15,6 +15,7 @@ parts:
     source: app/
     plugin: nodejs
 
+
     stage-packages:
       - libnotify4
       - libappindicator1
@@ -26,15 +27,20 @@ parts:
       - libasound2
       - pulseaudio
 
+
     after:
       - desktop-gtk3
 
-build: node_modules/.bin/electron-builder
-install: |
-  mkdir $SNAPCRAFT_PART_INSTALL/app
-  mv dist/linux-unpacked/* $SNAPCRAFT_PART_INSTALL/app
+
+
+    override-build: |
+      node_modules/.bin/electron-builder
+      mkdir $SNAPCRAFT_PART_INSTALL/app
+      mv dist/linux-unpacked/* $SNAPCRAFT_PART_INSTALL/app
     prime:
       - -node_modules
+
+
 
 apps:
   ubuntu-mate-launchpad:
