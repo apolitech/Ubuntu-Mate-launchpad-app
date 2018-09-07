@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Ubuntu Mate Launchpad
+Icon=${SNAP}/meta/gui/icon.png
+Categories=
+Exec=ubuntu-mate-launchpad
+Terminal=false
