@@ -12,6 +12,7 @@ app.on('ready', () => {
           nodeIntegration: false
         }
     });
+    window.setMenuBarVisibility(true);
     window.loadURL(HOMEPAGE);
 
     window.on('closed', () => {
