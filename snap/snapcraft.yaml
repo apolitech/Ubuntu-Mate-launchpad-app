@@ -51,6 +51,4 @@ apps:
       - browser-support
       - network
       - gsettings
-      - pulseaudio
       - opengl
-      - unity
